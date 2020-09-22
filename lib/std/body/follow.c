@@ -21,6 +21,10 @@ void clear_followers() {
 
 
 string *query_followers() {
+   if (!followers) {
+     clear_followers();
+   }
+
    return followers;
 }
 
